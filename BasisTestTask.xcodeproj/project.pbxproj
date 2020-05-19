@@ -79,12 +79,14 @@
 		866178F9247294D000C1BFB1 /* BasisTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				866178FA247294D000C1BFB1 /* AppDelegate.swift */,
-				866178FC247294D000C1BFB1 /* SceneDelegate.swift */,
-				866178FE247294D000C1BFB1 /* ViewController.swift */,
-				86617900247294D000C1BFB1 /* Main.storyboard */,
+				86A9667F2473621700F28B77 /* UIStoryboard */,
+				86A9667D247361CC00F28B77 /* Controllers */,
+				86A9667C247361C000F28B77 /* ViewModels */,
+				86A9667B247361A600F28B77 /* Models */,
+				86A9667A2473618D00F28B77 /* API */,
+				86A966792473617D00F28B77 /* Application */,
+				86A966782473616D00F28B77 /* Helper */,
 				86617903247294D200C1BFB1 /* Assets.xcassets */,
-				86617905247294D200C1BFB1 /* LaunchScreen.storyboard */,
 				86617908247294D200C1BFB1 /* Info.plist */,
 			);
 			path = BasisTestTask;
@@ -97,6 +99,60 @@
 				86617913247294D200C1BFB1 /* Info.plist */,
 			);
 			path = BasisTestTaskTests;
+			sourceTree = "<group>";
+		};
+		86A966782473616D00F28B77 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		86A966792473617D00F28B77 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				866178FA247294D000C1BFB1 /* AppDelegate.swift */,
+				866178FC247294D000C1BFB1 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		86A9667A2473618D00F28B77 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		86A9667B247361A600F28B77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86A9667C247361C000F28B77 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		86A9667D247361CC00F28B77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				866178FE247294D000C1BFB1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86A9667F2473621700F28B77 /* UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				86617900247294D000C1BFB1 /* Main.storyboard */,
+				86617905247294D200C1BFB1 /* LaunchScreen.storyboard */,
+			);
+			path = UIStoryboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
