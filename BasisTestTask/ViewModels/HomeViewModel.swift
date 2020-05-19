@@ -15,20 +15,33 @@ protocol CardsView: AnyObject {
 
 protocol CardsViewModelProtocol {
     init(view: CardsView, apiService: CardsInteractor)
-    func getData()
+    var numberOfItems : Int { get }
+    func getCard(at index : Int) -> CardData?
+    func loadData()
 }
 
 class CardsViewModel : CardsViewModelProtocol {
     private unowned let view: CardsView
     private let apiService: CardsInteractor
-    private var cards: [CardData]?
+    private var cards: [CardData] = [CardData]()
     
     required init(view: CardsView, apiService: CardsInteractor){
         self.view = view
         self.apiService = apiService
     }
     
-    func getData() {
+    var numberOfItems: Int{
+        return cards.count
+    }
+    
+    func getCard(at index: Int) -> CardData? {
+        if index < numberOfItems{
+            return cards[index]
+        }
+        return nil
+    }
+    
+    func loadData() {
         apiService.fetchCards()
     }
     
@@ -36,8 +49,13 @@ class CardsViewModel : CardsViewModelProtocol {
 
 extension CardsViewModel : CardsInteractorDelegate{
     func fetchCardsSuccess(data: ResponseModel) {
-        cards = data.data
-        view.reloadView()
+        if let arr = data.data{
+            cards = arr
+            view.reloadView()
+        }
+        else{
+            view.showError(message: "Empty!")
+        }
     }
     
     func fetchCardsError(error: String) {

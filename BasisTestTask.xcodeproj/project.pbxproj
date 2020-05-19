@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		862B043D2473BF710062595C /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B043C2473BF710062595C /* CardCollectionViewCell.swift */; };
+		862B043F2473C6980062595C /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B043E2473C6980062595C /* UIView+Corners.swift */; };
 		866178FB247294D000C1BFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866178FA247294D000C1BFB1 /* AppDelegate.swift */; };
 		866178FD247294D000C1BFB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866178FC247294D000C1BFB1 /* SceneDelegate.swift */; };
 		866178FF247294D000C1BFB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866178FE247294D000C1BFB1 /* HomeViewController.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		862B043C2473BF710062595C /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		862B043E2473C6980062595C /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		866178F7247294D000C1BFB1 /* BasisTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasisTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		866178FA247294D000C1BFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		866178FC247294D000C1BFB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		862B043B2473BF480062595C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				862B043C2473BF710062595C /* CardCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		866178EE247294CF00C1BFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +105,7 @@
 		866178F9247294D000C1BFB1 /* BasisTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				862B043B2473BF480062595C /* Cells */,
 				86A96680247364F700F28B77 /* Coordinator */,
 				86A9667D247361CC00F28B77 /* Controllers */,
 				86A9667C247361C000F28B77 /* ViewModels */,
@@ -120,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				86A9668D24739A2500F28B77 /* Alert.swift */,
+				862B043E2473C6980062595C /* UIView+Corners.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -288,6 +302,8 @@
 				86A966822473651E00F28B77 /* Coordinator.swift in Sources */,
 				86A9668C2473962E00F28B77 /* HomeViewModel.swift in Sources */,
 				86A9668824738DCA00F28B77 /* APIService.swift in Sources */,
+				862B043F2473C6980062595C /* UIView+Corners.swift in Sources */,
+				862B043D2473BF710062595C /* CardCollectionViewCell.swift in Sources */,
 				86A966862473656C00F28B77 /* MainCoordinator.swift in Sources */,
 				866178FF247294D000C1BFB1 /* HomeViewController.swift in Sources */,
 				86A966842473654F00F28B77 /* Storyboarded.swift in Sources */,
