@@ -15,6 +15,12 @@ class MainCoordinator: Coordinator{
     }
     
     func start() {
-        
+        let vc = HomeViewController.instantiate()
+        vc.coordinator = self
+        let interactor = CardsAPIService()
+        let viewModel = CardsViewModel(view: vc, apiService: interactor)
+        vc.viewModel = viewModel
+        interactor.delegate = viewModel
+        navigationController.pushViewController(vc, animated: false)
     }
 }
