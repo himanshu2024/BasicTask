@@ -36,35 +36,46 @@
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="362"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="djhdbcsdbcbsbcjsjcbjscbsscs  sbcbescb dcbjbcjebcde jdcdbdcjbsjcc bcjbsdjbcec ebebfbebfbuwe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-Lj-2W8">
-                                                    <rect key="frame" x="16" y="150.66666666666666" width="337" height="61"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWA-y8-nBk">
+                                                    <rect key="frame" x="16" y="16" width="337" height="330"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="djhdbcsdbcbsbcjsjcbjscbsscs  sbcbescb dcbjbcjebcde jdcdbdcjbsjcc bcjbsdjbcec ebebfbebfbuwe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-Lj-2W8">
+                                                            <rect key="frame" x="16" y="124.33333333333334" width="305" height="81.333333333333343"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ovO-Lj-2W8" secondAttribute="trailing" constant="16" id="4Vt-Nr-dtJ"/>
+                                                        <constraint firstItem="ovO-Lj-2W8" firstAttribute="centerX" secondItem="YWA-y8-nBk" secondAttribute="centerX" id="Vuy-Ua-eXi"/>
+                                                        <constraint firstItem="ovO-Lj-2W8" firstAttribute="leading" secondItem="YWA-y8-nBk" secondAttribute="leading" constant="16" id="vvw-px-jrJ"/>
+                                                        <constraint firstItem="ovO-Lj-2W8" firstAttribute="centerY" secondItem="YWA-y8-nBk" secondAttribute="centerY" id="zqW-u6-6V4"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ovO-Lj-2W8" firstAttribute="centerY" secondItem="CQa-Qf-i4b" secondAttribute="centerY" id="2Nh-6m-Cyd"/>
-                                                <constraint firstItem="ovO-Lj-2W8" firstAttribute="centerX" secondItem="CQa-Qf-i4b" secondAttribute="centerX" id="lUq-MZ-CJ6"/>
-                                                <constraint firstItem="ovO-Lj-2W8" firstAttribute="leading" secondItem="CQa-Qf-i4b" secondAttribute="leading" constant="16" id="la6-Pj-acU"/>
-                                                <constraint firstAttribute="trailing" secondItem="ovO-Lj-2W8" secondAttribute="trailing" constant="16" id="zGK-BF-vse"/>
+                                                <constraint firstItem="YWA-y8-nBk" firstAttribute="leading" secondItem="CQa-Qf-i4b" secondAttribute="leading" constant="16" id="6dN-bz-DdG"/>
+                                                <constraint firstAttribute="bottom" secondItem="YWA-y8-nBk" secondAttribute="bottom" constant="16" id="Acn-WR-QvL"/>
+                                                <constraint firstAttribute="trailing" secondItem="YWA-y8-nBk" secondAttribute="trailing" constant="16" id="dmZ-Pk-WS0"/>
+                                                <constraint firstItem="YWA-y8-nBk" firstAttribute="top" secondItem="CQa-Qf-i4b" secondAttribute="top" constant="16" id="xRR-Dz-vtu"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="369" height="362"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="16"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="textLabel" destination="ovO-Lj-2W8" id="seR-zD-lKj"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34N-In-83A">
-                                <rect key="frame" x="191.66666666666666" y="695" width="30.666666666666657" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34N-In-83A">
+                                <rect key="frame" x="207" y="716" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

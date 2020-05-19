@@ -44,10 +44,6 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        countLabel.text = "\(indexPath.row+1) / \(viewModel.numberOfItems)"
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
@@ -57,10 +53,21 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         return 0
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let center = CGPoint(x: collectionView.contentOffset.x + (collectionView.frame.width / 2), y: (collectionView.frame.height / 2))
+        if let ip = collectionView.indexPathForItem(at: center) {
+            countLabel.text = "\(ip.row + 1) / \(viewModel.numberOfItems)"
+        }
+        if collectionView.contentOffset.x > ((collectionView.frame.width) * CGFloat(viewModel.numberOfItems - 1) + 130){
+            collectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: true, scrollPosition: .left)
+        }
+    }
+    
 }
 
 extension HomeViewController: CardsView{
     func reloadView() {
+        countLabel.text = "\(1) / \(viewModel.numberOfItems)"
         collectionView.reloadData()
     }
     
