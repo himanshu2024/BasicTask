@@ -10,13 +10,17 @@ import UIKit
 
 class HomeViewController: UIViewController, Storyboarded {
     
+    //Screen title
     private let name = "Cards"
+    //Cell id
     private let cellId = "CardCell"
     
     @IBOutlet var countLabel: UILabel!
     @IBOutlet var collectionView: UICollectionView!
     
+    //View Model object
     var viewModel: CardsViewModelProtocol!
+    //Navigation handler
     weak var coordinator: MainCoordinator?
     
     override func viewDidLoad() {
@@ -33,6 +37,7 @@ class HomeViewController: UIViewController, Storyboarded {
     
 }
 
+// MARK:- UICollection
 extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfItems
@@ -65,6 +70,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
 }
 
+// MARK:- API Callback
 extension HomeViewController: CardsView{
     func reloadView() {
         countLabel.text = "\(1) / \(viewModel.numberOfItems)"

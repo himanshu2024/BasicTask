@@ -14,6 +14,7 @@ class MainCoordinator: Coordinator{
         self.navigationController = navigationController
     }
     
+    //implement the entry point of app
     func start() {
         let vc = HomeViewController.instantiate()
         vc.coordinator = self

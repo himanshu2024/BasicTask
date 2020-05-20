@@ -11,6 +11,7 @@ import UIKit
 class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet var textLabel: UILabel!
     
+    //Update the card quot
     var text : String?{
         didSet{
             if let text = text{

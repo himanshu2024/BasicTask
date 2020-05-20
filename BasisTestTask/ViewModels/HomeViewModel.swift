@@ -23,7 +23,7 @@ protocol CardsViewModelProtocol {
 class CardsViewModel : CardsViewModelProtocol {
     private unowned let view: CardsView
     private let apiService: CardsInteractor
-    private var cards: [CardData] = [CardData]()
+    var cards: [CardData] = [CardData]()
     
     required init(view: CardsView, apiService: CardsInteractor){
         self.view = view
@@ -54,13 +54,11 @@ extension CardsViewModel : CardsInteractorDelegate{
             view.reloadView()
         }
         else{
-            view.showError(message: "Empty!")
+            view.showError(message: "Empty data!")
         }
     }
     
     func fetchCardsError(error: String) {
         view.showError(message: error)
     }
-    
-    
 }

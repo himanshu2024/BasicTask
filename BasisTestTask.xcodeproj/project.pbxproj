@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		708348BE24751FC8007AA04F /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 708348BD24751FC7007AA04F /* response.json */; };
 		862B043D2473BF710062595C /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B043C2473BF710062595C /* CardCollectionViewCell.swift */; };
 		862B043F2473C6980062595C /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862B043E2473C6980062595C /* UIView+Corners.swift */; };
 		866178FB247294D000C1BFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866178FA247294D000C1BFB1 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		708348BD24751FC7007AA04F /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		862B043C2473BF710062595C /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		862B043E2473C6980062595C /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		866178F7247294D000C1BFB1 /* BasisTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasisTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 			children = (
 				86617911247294D200C1BFB1 /* BasisTestTaskTests.swift */,
 				86617913247294D200C1BFB1 /* Info.plist */,
+				708348BD24751FC7007AA04F /* response.json */,
 			);
 			path = BasisTestTaskTests;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708348BE24751FC8007AA04F /* response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

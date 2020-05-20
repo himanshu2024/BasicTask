@@ -10,5 +10,6 @@ import UIKit
 
 protocol Coordinator {
     var navigationController: UINavigationController { get set }
+    //start point of app
     func start()
 }
